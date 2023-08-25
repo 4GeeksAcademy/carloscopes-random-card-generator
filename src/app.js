@@ -1,5 +1,5 @@
-/*import "bootstrap";
-import "./style.css";*/
+import "bootstrap";
+import "./style.css";
 
 window.onload = function() {
   newCardGenerator();
@@ -40,7 +40,9 @@ window.onload = function() {
     numberCard.innerHTML = numberElement;
 
     const suitCard = document.querySelectorAll("span");
+
     let suitElement = suitGenerator();
+
     suitCard.forEach(span => {
       span.innerHTML = suitElement;
       if (suitElement == "♦" || suitElement == "♥") {
